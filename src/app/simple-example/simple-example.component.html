@@ -1,0 +1,24 @@
+<h2>&#64;if Conditional Examples</h2>
+<h3>In this example: a is {{a}}, b is {{b}} and c is false</h3>
+
+<p>&#64;if conditional</p>
+@if(a){
+<p>a is truthy</p>
+}
+
+<p>&#64;if &#64;else conditional</p>
+@if(b){
+<p>b is truthy</p>
+}@else {
+<p>b is falsy</p>
+}
+
+<p>&#64;if &#64;elseif &#64;else conditional</p>
+@if(b){
+<p>b is truthy</p>
+}@else if(c){
+<p>c is truthy</p>
+}
+@else {
+<p>b and c are falsy</p>
+}
